@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>랜덤 숫자 맟히기 게임</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- 코드 시작 -->
+    <div id="wrapper">
+      <h1>랜덤숫자 맞히기 게임</h1>
+      <p>컴퓨터가 생각한 1에서 100까지 사이의 수를 맞춰보세요.</p>
+      <div id="input_section">
+        <input type="number" id="try" autofocus onkeypress="check_enter(event)">
+        <button id="check" class="btn1" onclick="check_number()">확인</button>
+        <button id="reset" class="btn2" onclick="window.location.reload()">재시작</button>
+        <p id="previousInput">방금 전 입력한 값 : ?</p>
+      </div>
+      <div id="display">?</div>
+      <div id="count">시도횟수 : 0회</div>
+    </div>
+    <!-- 코드 끝 -->
+    <script src="script.js"></script>
+  </body>
+</html>
